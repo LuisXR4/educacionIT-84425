@@ -82,19 +82,20 @@ def borrar_pelicula(conn, p_id):
     except Exception as e:
         print(f"Fallo al borrar la película id = {p_id}: {e.__class__}")        
         
-   
+#_____________________________________________ Main   
 conn = conexion()
 
 if conn == "Error":
     sys.exit()
 
-#crear_peliculas(conn)
-#consultar_peliculas(conn)
-#actualizar_peliculas(conn, 4, "ROCKY I")
+crear_peliculas(conn)
+consultar_peliculas(conn)
+print("________________________________________________________________________")
+actualizar_peliculas(conn, 4, "ROCKY I")
 #consultar_peliculas_v1(conn, 1984)
-#borrar_pelicula(conn, 6)
-#consultar_peliculas(conn)
-
+borrar_pelicula(conn, 6)
+consultar_peliculas(conn)
+print("________________________________________________________________________")
 lista = [("Tiburon", 1980),("ET", 1981), ("Star Wars", 1976), ("Flashdance", 1982), ("Taxi Driver", 1976) ]
 for pelicula in lista:
     p_peli, p_anio = pelicula
