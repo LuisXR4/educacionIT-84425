@@ -7,6 +7,7 @@ Diccionarios: { clave: valor, clave1 : valor1 }
 
 """
 
+
 paises  = { "arg": 47, "bra": 213, "uru": 3, "col": 51, "mex": 132, "chi": 17, "per": 51 }
 
 # Orden NO
