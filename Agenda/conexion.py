@@ -15,3 +15,5 @@ def obtener_conexion():
     except Exception as e:
         print("❌ Error al conectar:", e)
         return None
+    
+    
