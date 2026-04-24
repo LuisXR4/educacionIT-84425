@@ -1,6 +1,4 @@
-
 from flask import Flask,request,jsonify
-
 
 alumnos = []
 campos = ("name", "courses")
@@ -10,7 +8,7 @@ app.config['JSON_SORT_KEYS'] = False
 
 @app.route("/")
 def test():
-	return jsonify({"mensaje":"Error, servicio en localhost:7001/student"}),404
+	return jsonify({"mensaje":"Error, servicio en localhost:7001/student"}),406
 
 
 @app.route("/student", methods=['GET'])
